@@ -1,0 +1,69 @@
+
+  * {margin:0; padding:0;} /* 초기화 */ 
+  body {background: url('../images/bg.gif')repeat-x;}
+  ul, li {margin:0; padding:0; list-style:none;}
+  #wrap {width: 1200px; margin:0 auto;}
+
+  /* header */ 
+  #wrap header {height:100px; background: #ddd;}
+  #wrap header .logo {width:300px; height:100px; background:#fff; float:left;}
+  #wrap header .logo img {margin-top:40px;}
+
+  #wrap header .menu {width:900px; height:100px; background:#fff; float:left;}
+  #wrap header .menu ul {float:right;margin-top:33px;}
+  #wrap header .menu ul li {float:left; margin-left:30px;}
+  #wrap header .menu ul li a{
+      text-decoration: none;
+      font-size:18px;
+      font-weight: bold;
+      display: block;
+      color:#000;
+      padding:5px 15px; 
+      /* 상하-5px / 왼오 - 15px */
+  }
+  #wrap header .menu ul li a:hover{
+      color:#fff;
+      background: #000;
+     
+  }
+  #wrap header .menu ul li a:active{background: #ddd;}
+
+  /* section */
+  
+  #wrap section {height:770px;}
+  #wrap section .slider{height:500px; }
+  #wrap section .con{height:270px;}
+
+  /* 공지사항 */
+  #wrap section .con .notice{width:600px; height:270px; float:left; background: #fff;}
+  #wrap section .con .notice h1 {font-size:23px; padding:10px 0 0 10px;}   /* 상.오.하.왼 */
+  #wrap section .con .notice ul {padding:10px;}
+  #wrap section .con .notice ul li {
+      height:30px; line-height:30px; 
+      border-bottom:1px dotted #ddd;
+  }
+  #wrap section .con .notice ul li a{font-size:15px; color:#333; text-decoration: none;}
+  #wrap section .con .notice ul li a:hover{color:skyblue; text-decoration: underline;}
+
+  #wrap section .con .notice ul li span{ font-size:14px;
+float:right; color:#999;}
+
+
+
+  #wrap section .con .banner{width:600px; height:270px; float:left;}
+
+
+
+  /* btn */
+  #wrap #btn {height:180px; }
+  #wrap #btn ul li {float:left; margin:30px 45px; }
+  #wrap #btn {height:180px; background:url('../images/btn-bg.jpg')repeat-x;}
+  #wrap #btn ul li:hover {opacity:0.7;}
+
+
+  /* footer */
+  #wrap footer {height:100px; }
+
+
+
+  

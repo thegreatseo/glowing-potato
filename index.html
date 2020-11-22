@@ -1,66 +1,93 @@
+<!-- html - 구조언어 
+css - 디자인 언어 
+javascript - 동작언어  -->
+<!-- html:5 (enter) -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>samsung</title>
-   <style>
-        * {margin:0; padding:0;}
-        ul, li {margin:0; padding:0; list-style:none;}
-        #wrap {width: 1200px; margin:0 auto;}
-
-        #wrap header {height:100px; background: #ddd;}
-        #wrap header .logo {width:300px; height:100px; background:red; float:left;}
-        #wrap header .menu {width:900px; height:100px; background:blue; float:left;}
-        
-        /* section */
-        #wrap section {height:730px; background: #333;}
-        #wrap section .slider{height:500px; background: #777;}
-        #wrap section .con{height:230px; background: #555;}
-        #wrap section .con .notice{width:600px; height:230px; background: green; float:left;}
-        #wrap section .con .banner{width:600px; height:230px; background: #000; float:left;}
-
-        /* btn */
-        #wrap #btn {height:180px; background: #ddd;}
-        #wrap #btn ul li {float:left; margin:30px 45px; }
-
-
-        /* footer */
-        #wrap footer {height:100px; background: #333;}
-
-   </style>
+   <!-- css 영역  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.innerfade.js"></script>
+    <script>
+        // innerfade 플러그인 적용 
+        $(function(){
+            $('.inner-fade').innerfade({
+                animationtype: 'fade',
+                timeout:2000, 
+                // 2000 -> 2초
+            });
+        });
+    </script>
 </head>
 <body>
+    <!-- #wrap>header+section+footer (enter) -->
      <div id="wrap">
         <header>
             <!-- .logo+.menu -->
-            <div class="logo">logo</div>
-            <div class="menu">menu</div>
+            <div class="logo">
+                <!-- a>img -->
+                <a href="#"><img src="images/logo.png" alt="삼성로고"></a>
+            </div>
+            <div class="menu">
+                <!-- ul>li>a -->
+                <ul>
+                    <li><a href="#">모바일</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">가전</a></li>
+                    <li><a href="#">오디오</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                </ul>
+            </div>
         </header>
         <section>
             <!-- .slider+.con -->
             <div class="slider">
-                slider
+                <!-- ul>li>a>img -->
+                <ul class="inner-fade" >
+                    <li><a href="#"><img src="images/01.jpg" alt="슬라이딩1"></a></li>
+                    <li><a href="#"><img src="images/02.jpg" alt="슬라이딩2"></a></li>
+                    <li><a href="#"><img src="images/03.jpg" alt="슬라이딩3"></a></li>
+                </ul>
             </div>
             <div class="con">
                 <!-- .notice+.banner -->
-                <div class="notice">notice</div>
-                <div class="banner">banner</div>
+                <div class="notice">
+                   <h1> 공지사항 </h1> 
+                   <ul>
+                       <li><a href="#">삼성전자 10년 전 가격 그대로 최대 300만원까지 보상 혜택 </a><span>20-10-07</span></li>
+                       <li><a href="#">삼성전자 10년 전 가격 그대로 최대 300만원까지 보상 혜택 </a><span>20-10-07</span></li>
+                       <li><a href="#">삼성전자 10년 전 가격 그대로 최대 300만원까지 보상 혜택 </a><span>20-10-07</span></li>
+                       <li><a href="#">삼성전자 10년 전 가격 그대로 최대 300만원까지 보상 혜택 </a><span>20-10-07</span></li>
+                       <li><a href="#">삼성전자 10년 전 가격 그대로 최대 300만원까지 보상 혜택 </a><span>20-10-07</span></li>
+                       <li><a href="#">삼성전자 10년 전 가격 그대로 최대 300만원까지 보상 혜택 </a><span>20-10-07</span></li>
+                    
+                   </ul>
+                </div>
+                <div class="banner">
+                    <a href="#"><img src="images/banner.jpg" alt="배너"></a>
+                </div>
             </div>
         </section>
         <div id="btn">
             <!-- ul>li>a>img (enter) -->
             <ul>
-                <li><a href="https://www.naver.com/"><img src="images/btn.png" alt="버튼"></a></li>
-                <li><a href="https://www.google.com/"><img src="images/btn.png" alt="버튼"></a></li>
-                <li><a href="https://klms.kaist.ac.kr/"><img src="images/btn.png" alt="버튼"></a></li>
-                <li><a href="https://portal.kaist.ac.kr/"><img src="images/btn.png" alt="버튼"></a></li>
-                <li><a href="https://mail.kaist.ac.kr/"><img src="images/btn.png" alt="버튼"></a></li>
-                <li><a href="https://mail.naver.com/"><img src="images/btn.png" alt="버튼"></a></li>
+                <li><a href="https://www.naver.com/"><img src="images/btn_01.png" alt="버튼"></a></li>
+                <li><a href="https://www.naver.com/"><img src="images/btn_02.png" alt="버튼"></a></li>
+                <li><a href="https://www.naver.com/"><img src="images/btn_03.png" alt="버튼"></a></li>
+                <li><a href="https://www.naver.com/"><img src="images/btn_04.png" alt="버튼"></a></li>
+                <li><a href="https://www.naver.com/"><img src="images/btn_05.png" alt="버튼"></a></li>
+                <li><a href="https://www.naver.com/"><img src="images/btn_06.png" alt="버튼"></a></li>
             </ul>
         </div>
 
-        <footer>주소</footer>
+        <footer>Copyright © 2020 SAMSUNG All Rights Reserved.
+            경기도 수원시 영통구 삼성로 129 (매탄동) 삼성전자주식회사 대표이사 김기남 / 서비스사업자 : 삼성에스디에스(주)</footer>
     </div>
 </body>
 </html>
