@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samsung</title>
+   <style>
+        * {margin:0; padding:0;}
+        ul, li {margin:0; padding:0; list-style:none;}
+        #wrap {width: 1200px; margin:0 auto;}
+
+        #wrap header {height:100px; background: #ddd;}
+        #wrap header .logo {width:300px; height:100px; background:red; float:left;}
+        #wrap header .menu {width:900px; height:100px; background:blue; float:left;}
+        
+        /* section */
+        #wrap section {height:730px; background: #333;}
+        #wrap section .slider{height:500px; background: #777;}
+        #wrap section .con{height:230px; background: #555;}
+        #wrap section .con .notice{width:600px; height:230px; background: green; float:left;}
+        #wrap section .con .banner{width:600px; height:230px; background: #000; float:left;}
+
+        /* btn */
+        #wrap #btn {height:180px; background: #ddd;}
+        #wrap #btn ul li {float:left; margin:30px 45px; }
+
+
+        /* footer */
+        #wrap footer {height:100px; background: #333;}
+
+   </style>
+</head>
+<body>
+     <div id="wrap">
+        <header>
+            <!-- .logo+.menu -->
+            <div class="logo">logo</div>
+            <div class="menu">menu</div>
+        </header>
+        <section>
+            <!-- .slider+.con -->
+            <div class="slider">
+                slider
+            </div>
+            <div class="con">
+                <!-- .notice+.banner -->
+                <div class="notice">notice</div>
+                <div class="banner">banner</div>
+            </div>
+        </section>
+        <div id="btn">
+            <!-- ul>li>a>img (enter) -->
+            <ul>
+                <li><a href="https://www.naver.com/"><img src="images/btn.png" alt="버튼"></a></li>
+                <li><a href="https://www.google.com/"><img src="images/btn.png" alt="버튼"></a></li>
+                <li><a href="https://klms.kaist.ac.kr/"><img src="images/btn.png" alt="버튼"></a></li>
+                <li><a href="https://portal.kaist.ac.kr/"><img src="images/btn.png" alt="버튼"></a></li>
+                <li><a href="https://mail.kaist.ac.kr/"><img src="images/btn.png" alt="버튼"></a></li>
+                <li><a href="https://mail.naver.com/"><img src="images/btn.png" alt="버튼"></a></li>
+            </ul>
+        </div>
+
+        <footer>주소</footer>
+    </div>
+</body>
+</html>
